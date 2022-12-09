@@ -1,0 +1,516 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.headrow {
+  display: flex;
+  background-color: #E1E1E1;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow: hidden;
+  height:8vw;
+}
+
+.namelogo, .namelogo a {
+  font-family: AmFour;
+  font-size: 2.5vw;
+  text-decoration: none;
+  padding: 0px 0px 0px 20px;
+  color: #BD9909;
+}
+
+.namelogo a:hover{
+  color:#505249; 
+}
+
+.navcol {
+  display: flex;
+  padding: calc(8vw/3) 0px 0px 0px;
+}
+
+.navcol a{
+  font-family: GlacialReg;
+  font-size: 2vw;
+  color: black;
+  padding: 0px 100px 0px 0px;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+
+.navcol #lastnav {
+  padding-right: 50px;
+}
+
+.navcol a:hover {
+  color:#8f9675; /*light green*/
+}
+
+@media screen and (max-width: 700px) {
+  .navcol #lastnav {
+    padding-right: 25px;
+  }
+  .navcol a{
+    padding: 0px 50px 0px 0px;
+  }
+}
+
+#bannerbg {
+  font-family: GlacialReg;
+  width: 100%;
+  overflow: hidden;
+  background-color: #E1E1E1;
+}
+
+
+#bannerbg .banners {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 440%;
+}
+
+#bannerbg .bannercontent {
+  position: relative;
+}
+
+#bannerbg .bannercontent img {
+  width: 110%;
+  object-fit: contain;
+}
+
+#bannerbg .bannercontent .topic {
+  position: absolute;
+  width: 25vw;
+  top: 7%;
+  left: 70vw;
+  font-family: EBGar;
+  color: white;
+  font-size: 5vw;
+  text-align: right;
+}
+
+#bannerbg .bannercontent .desc{
+  padding-top: 1vw;
+  font-family: GlacialReg;
+  font-size: 1.8vw;
+  margin-left: 65px;
+}
+
+#bannerbg .bannercontent #topic3 {
+  color: black;
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1800px){
+  #bannerbg .bannercontent .topic {
+      font-size: 4vw;
+  }
+  #bannerbg .bannercontent .desc {
+      font-size: 1.5vw;
+      margin-left: 100px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  #bannerbg .bannercontent .topic {
+      font-size: 3.5vw;
+  }
+  #bannerbg .bannercontent .desc {
+      font-size: 1.4vw;
+      margin-left: 40px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  #bannerbg .bannercontent .topic {
+      font-size: 3vw;
+  }
+  #bannerbg .bannercontent .desc {
+      font-size: 1.3vw;
+      margin-left: 20px;
+  }
+}
+
+.button{
+  padding-top: 1vw;
+  width: 100%;
+  display: flex;
+  margin-left: 7vw;
+  
+}
+
+.button label{
+  height: 15px;
+  width: 15px;
+  border-radius: 20px;
+  background: #BD9909;
+  margin: 0 4px;
+  cursor: pointer;
+}
+
+#b1 label {
+  background: #FFDE59;
+}
+
+input[type="radio"]{
+  display: none;
+}
+
+#two:checked ~ .banners{ 
+  margin-left: -110%; 
+}
+
+#three:checked ~ .banners{ 
+  margin-left: -220%; 
+}
+
+#four:checked ~ .banners{ 
+  margin-left: -330%; 
+}
+
+#menubg {
+  background-color: #E1E1E1;
+  height: auto;
+  width: 100%;
+}
+
+.menus {
+  display: flex;
+  justify-content: center;
+  overflow: auto;
+  transition: all 0.4s ease;
+}
+
+.menus img {
+  width: 15vw;
+}
+
+.menucontent{
+  transition: all 0.4s ease;
+}
+
+.menucontent:hover{
+  transform: translateY(-15px);
+}
+
+#favebg {
+  background-image: url("pics/DIVIDERS/Div 2.png");
+  background-size: cover;
+  height: 850px;
+  background-repeat: no-repeat;
+}
+
+#favebg p:first-child {
+  padding: 3vw;
+  font-family: EBGar;
+  font-size: 3.5vw;
+  text-align: center;
+}
+
+.cardcontainer {
+  padding-left: 10vw;
+  max-width: 90vw;
+  width: 100%;
+  overflow: hidden;
+}
+
+.cardcontainer .cardboard {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.cardboard  .card{
+  width: calc(100% / 3 - 10px);
+  border-radius: 10px;
+  background-color: #505348;
+  color: white;
+  padding: calc(2vw + 10px);
+  transition: all 0.4s ease;
+}
+
+.cardboard  .card:hover{
+  border-radius: 10px;
+  background-color: rgb(236, 229, 207, 0.7);
+  color: black;
+}
+
+ .card .content{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ .card .details{
+  padding-top: calc(1vw + 1px);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+ .card .content .img{
+  height: 350px;
+  width: 300px;
+  transition: all 0.4s ease;
+}
+  
+.card .content .img img{
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.card .content .price{
+  font-family: Aleo;
+  font-size: 1.5vw;
+}
+
+.card .content .name{
+  font-family: DMSerif;
+  font-size: 1.4vw;
+  letter-spacing: 1.5px;
+}
+  
+.card .content .flavor{
+  padding-right: 10px;
+  font-family: EBGar;
+  font-size: 1vw;
+  letter-spacing: 1.5px;
+}
+
+@media (max-width: 1400px) {
+  .card .content .img{
+    height: 250px;
+    width: 200px;
+  }
+  
+}
+
+@media (max-width: 990px) {
+  .cardboard  .card{
+    margin: 20px 0 10px 0;
+    width: calc(100% / 2 - 10px);
+  }
+  .cardcontainer .cardboard {
+    justify-content: space-around;
+  }
+  .card .content .img{
+    height: 180px;
+    width: 160px;
+  }
+  
+}
+
+@media (max-width: 670px) {
+  
+  #favebg p:first-child {
+    padding: 3vw 0 0 1vw;
+  }
+  .card .content .img{
+    height: 150px;
+    width: 120px;
+  }
+  
+}
+
+@media (max-width: 580px) {
+  .navcol {
+    padding: calc(8vw/4) 0px 0px 0px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navcol {
+    padding: calc(8vw/6) 0px 0px 0px;
+  }
+}
+
+@media (max-width: 450px) {
+  
+  .cardboard  .card{
+    width: 100%;
+    padding: 0;
+    padding-left: calc(2vw + 10px);
+  }
+  .cardcontainer{
+    max-width: 85vw;
+    padding-left: 15vw;
+  }
+  .card .content .img{
+    height: 130px;
+    width: 100px;
+    padding: 20px 10px 10px 0px;
+  }
+  .card .content{
+    flex-direction: row;
+  }
+}
+
+#blogpreview {
+  background-image: url("pics/DIVIDERS/Div 3.png");
+	background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: flex;
+}
+
+.col1 img{
+  margin-left: -10vw;
+  width: 45vw;
+  transition: all 0.4s ease;
+}
+
+
+.col2 {
+  padding-top: 8%;
+	width: 65vw;
+	font-size: 3.5vw;
+  font-family: EBGar;
+  height: auto;
+}
+
+.col2:first-child {
+  font-family: EBGar;
+  font-size: 3vw;
+}
+
+highlight {
+  font-weight: bolder;
+}
+
+.col2 #blogdesc {
+  display: inline-block;
+  padding: 1vw 0px 2vw 0px;
+  margin-right: 60px;
+	font-size: 2vw;
+  font-family: GlacialReg;
+  line-height: 3vw;
+}
+
+.col2 #clickread {
+  padding: 5px 0px 5px calc((100vw / 4)/ 3);
+  width: calc(100vw / 4);
+	font-size: 1.5vw;
+  font-family: Aileron;
+  color: white;
+  background-color: #505348;
+  border-radius: 10px;
+}
+
+@media (max-width: 990px) {
+  .col1 img{
+    margin-left: 0vw;
+    width: 35vw;
+  }
+  .col2 {
+    padding-top: 5%;
+  }
+  .col2 #blogdesc {
+    margin-right: 50px;
+  }
+}
+
+
+@media (max-width: 840px) {
+  .col1 img{
+    margin-left: 2vw;
+    width: 30vw;
+  }
+  .col2 {
+    padding-top: 3%;
+  }
+  .col2 #blogdesc {
+    margin-right: 40px;
+  }
+}
+
+@media (max-width: 450px) {
+  .col1 img{
+    padding-top: 10%;
+    width: 25vw;
+  }
+  .col2 {
+    padding-top: 3%;
+    padding-bottom: 5%;
+  }
+  .col2 #blogdesc {
+    margin-right: 0px;
+  }
+}
+
+
+#footerbg {
+  background-image: url("pics/DIVIDERS/Footer.png");
+	background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.srow {
+	display: inline-flex;
+  justify-content: center;
+	width: 100%; 
+}
+
+.socials {
+	opacity: 0.9;
+	padding: 50px 15px 50px 15px;
+	transition: all 0.4s ease;
+}
+
+.socials img {
+  height: 8vw;
+}
+
+.socials:hover {
+	transform: scale(1.1);
+}
+
+#footerbg .contact {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.contact .title {
+  font-family: DMSerif;
+  font-size: 3.5vw;
+}
+
+@font-face {
+  font-family: "Aileron";
+  src: url("fonts/Aileron-Heavy.otf");
+}
+@font-face {
+  font-family: "Aleo";
+  src: url("fonts/Aleo-Light.ttf");
+}
+@font-face {
+  font-family: "AmFour";
+  src: url("fonts/Amsterdam Four_ttf 400.ttf");
+}
+@font-face {
+  font-family: "DMSerif";
+  src: url("fonts/DMSerifDisplay-Regular.ttf");
+}
+@font-face {
+  font-family: "EBGar";
+  src: url("fonts/EBGaramond-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "GlacialReg";
+  src: url("fonts/GlacialIndifference-Regular.otf");
+}
+@font-face {
+  font-family: "GlacialBold";
+  src: url("fonts/GlacialIndifference-Bold.otf");
+}
+@font-face {
+  font-family: "LibBask";
+  src: url("fonts/LibreBaskerville-Regular.ttf");
+}
+@font-face {
+  font-family: "Nick";
+  src: url("fonts/Nickainley-Normal.otf");
+}
