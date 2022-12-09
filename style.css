@@ -44,6 +44,7 @@
 
 .navcol a:hover {
   color:#8f9675; /*light green*/
+  font-family: GlacialBold;
 }
 
 @media screen and (max-width: 700px) {
@@ -390,14 +391,21 @@ highlight {
   line-height: 3vw;
 }
 
-.col2 #clickread {
-  padding: 5px 0px 5px calc((100vw / 4)/ 3);
+.col2 a {
+  padding: 5px calc((100vw / 4)/ 4) 5px calc((100vw / 4)/ 4);
   width: calc(100vw / 4);
 	font-size: 1.5vw;
   font-family: Aileron;
   color: white;
   background-color: #505348;
   border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+
+.col2 a:hover{
+  background-color: rgb(236, 229, 207);
+  color: black;
 }
 
 @media (max-width: 990px) {
