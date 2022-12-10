@@ -16,16 +16,13 @@
   width: 45vw;
 }
 
-.namelogo, .namelogo a {
-  font-family: AmFour;
-  font-size: 35px;
-  color: #BD9909;
-  text-decoration: none;
-  padding: 0px 0px 0px 50px;
+.logocol #logoicon {
+  display: none;
 }
 
-.namelogo a:hover{
-  color:#505249; 
+.logocol #namelogo {
+  width: 300px;
+  transition: all 0.4s ease;
 }
 
 .navcol {
@@ -54,48 +51,76 @@
   .navcol {
     width: 65vw;
   }
-  .namelogo, .namelogo a {
-    padding: 0px 0px 0px 40px;
-  }
 }
 
 @media screen and (max-width: 920px) {
-  .namelogo, .namelogo a {
-    padding: 0px 0px 0px 20px;
+  .logocol {
+    width: 33vw;
   }
+  .logocol #namelogo {
+    padding-top: 5px;
+    width: 260px;
+  }
+
 }
 
 @media screen and (max-width: 850px) {
-  .navcol #secondnav {
-    display: none;
+  .headrow {
+    height: 100px;
   }
   .logocol {
-    width: 55vw;
+    width: 30vw;
   }
   .navcol {
-    width: 40vw;
-    justify-content: space-between;
+    width: 70vw;
+  }
+  .navcol a{
+    font-size: 25px;
+  }
+  .logocol #logoicon {
+    display: flex;
+    width: 260px;
+    transition: all 0.4s ease;
+  }
+  .logocol #namelogo {
+    display: none;
   }
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 640px) {
+  .headrow {
+    height: 80px;
+  }
+  .logocol {
+    width: 25vw;
+  }
+  .navcol {
+    width: 75vw;
+  }
+  .navcol a{
+    font-size: 20px;
+  }
+  .logocol #logoicon {
+    width: 210px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .headrow {
+    height: 60px;
+  }
+  .logocol, .navcol {
+    width: 50vw;
+    justify-content: space-between;
+  }
+  .navcol a{
+    font-size: 18px;
+  }
   .navcol #lastnav {
     display: none;
   }
-  .logocol {
-    width: 75vw;
-  }
-  .navcol {
-    width: 25vw;
-  }
-}
-
-@media screen and (max-width: 420px) {
-  .logocol {
-    width: 70vw;
-  }
-  .navcol {
-    width: 30vw;
+  .logocol #logoicon {
+    width: 160px;
   }
 }
 
@@ -150,6 +175,10 @@
   margin-left: 5vw;
 }
 
+#bannerbg .bannercontent #topic3 .desc, #bannerbg .bannercontent #topic4 .desc {
+  margin-left: 0vw;
+}
+
 #bannerbg .bannercontent .reader {
   margin-top: -20px;
   display: block;
@@ -171,10 +200,6 @@
 .reader a:hover {
   color: white;
   background-color: rgb(24,25,26, 0.7);
-}
-
-#bannerbg .bannercontent #topic3 .desc, #bannerbg .bannercontent #topic4 .desc {
-  margin-left: 0vw;
 }
 
 #bannerbg .slider {
@@ -267,8 +292,8 @@
     left: 55vw;
   }
   #bannerbg .bannercontent #topic4 {
-    width: 50vw;
-    left: 45vw;
+    width: 40vw;
+    left: 55vw;
   }
   #bannerbg .bannercontent .desc{
     margin-left: 15vw;
@@ -293,20 +318,24 @@
   }
 }
 
-@media screen and (max-width: 600px) {
- 
+@media screen and (max-width: 640px) {
   #bannerbg .bannercontent .topic {
     font-size: 40px;
   }
-
+  #bannerbg .bannercontent #topic4 {
+    font-size: 35px;
+  }
 }
 
-@media screen and (max-width: 510px) {
+@media screen and (max-width: 490px) {
   #bannerbg .bannercontent .reader {
     margin-top: -5px;
   }
   #bannerbg .bannercontent .topic {
     font-size: 30px;
+  }
+  #bannerbg .bannercontent #topic4 {
+    font-size: 25px;
   }
   .reader a {  
     font-size: 12px;
@@ -337,7 +366,7 @@
 
 @media screen and (max-width: 820px) {
   .menus img {
-    width: 25vw;
+    width: 20vw;
   }
 }
 
@@ -479,8 +508,8 @@
     width: 100%;
   }
   .cardcontainer{
-    padding-left: 25vw;
-    max-width: 75vw;
+    padding-left: 15vw;
+    max-width: 85vw;
   }
   .card .content .img{
     height: 150px;
@@ -656,23 +685,23 @@ highlight {
   text-align: center;
 }
 
-.contact .title {
+.contact .resto {
+  font-family: AmFour;
+  font-size: 50px;
+  color: #BD9909;
+}
+.contact .topic {
   font-family: DMSerif;
   font-size: 40px;
 }
 
 @media screen and (max-width: 820px){
-  .contact .namelogo {
+  .contact .resto  {
     font-size: 30px;
   }
-  .contact .title {
-    font-family: DMSerif;
+  .contact .topic {
     font-size: 20px;
   }
-  .social img {
-    height: 8vw;
-  }
-
 }
 
 @font-face {
