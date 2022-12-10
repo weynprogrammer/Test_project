@@ -380,14 +380,15 @@
   background-repeat: no-repeat;
 }
 
-#favebg p:first-child {
+#favebg p:first-child, #menutitle p:first-child {
   padding:50px 0px 25px 0px;
   font-family: EBGar;
   font-size: 80px;
   text-align: center;
 }
 
-.container {
+/*of class .cardboard*/
+#homepage, #menupage {
   padding-left: 10vw;
   max-width: 90vw;
   width: 100%;
@@ -406,8 +407,15 @@
   border-radius: 10px;
   background-color: #505348;
   color: white;
-  padding: calc(2vw + 10px);
   transition: all 0.4s ease;
+}
+
+#homepage .card {
+  padding: calc(2vw + 10px);
+}
+
+#menupage .card {
+  padding: 0px calc(2vw + 10px) calc(2vw) calc(2vw + 10px);
 }
 
 .cardboard .card:hover{
@@ -423,17 +431,10 @@
   align-items: center;
 }
 
- .card .details{
-  padding-top: calc(1vw + 1px);
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-}
-
 .card .content .img{
   height: 350px;
   width: 300px;
+  transition: all 0.4s ease;
 }
   
 .card .content .img img{
@@ -461,18 +462,18 @@
 }
 
 @media (max-width: 1280px) {
-  #favebg p:first-child  {
+  #favebg p:first-child, #menutitle p:first-child {
     font-size: 70px;
   }
   .card .content .img{
-    height: 270px;
-    width: 220px;
+    height: 270px; /*-80 from original size*/
+    width: 220px;  /*-80 from original size*/
   }
 }
 
 @media (max-width: 990px) {
-  #favebg p:first-child  {
-    font-size: 40px;
+  #favebg p:first-child, #menutitle p:first-child {
+    font-size: 50px;
   }
   .cardboard  .card{
     margin: 20px 0 10px 0;
@@ -482,8 +483,8 @@
     justify-content: space-around;
   }
   .card .content .img{
-    height: 200px;
-    width: 180px;
+    height: 200px; /*-70 from recent size*/
+    width: 180px; /*-40 from recent size*/
   }
   .card .content .price{
     font-size: 25px;
@@ -499,6 +500,9 @@
 }
 
 @media (max-width: 600px) {  
+  #favebg p:first-child, #menutitle p:first-child {
+    font-size: 40px;
+  }
   .cardboard  .card{
     width: 100%;
   }
@@ -507,8 +511,8 @@
     max-width: 85vw;
   }
   .card .content .img{
-    height: 150px;
-    width: 130px;
+    height: 150px; /*-50 from recent size*/
+    width: 130px; /*-50 from recent size*/
   }
   .card .content .price{
     font-size: 20px;
@@ -524,7 +528,7 @@
 }
 
 @media (max-width: 460px) {
-  #favebg p:first-child  {
+  #favebg p:first-child, #menutitle p:first-child   {
     font-size: 30px;
   }
 }
@@ -668,7 +672,7 @@ highlight {
 }
 
 .social img {
-  height: 10vw;
+  height: 8vw;
 }
 
 .social:hover {

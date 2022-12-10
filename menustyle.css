@@ -1,22 +1,44 @@
 #menutitle {
-  background-image: url("pics/DIVIDERS/Menu.png");
-  background-size: cover;
-  height: 1500px;
+  background-image: url("pics/GRAPHICS/Leaf.png"), url("pics/DIVIDERS/Menu.png");
+  background-size: 800px, cover;
+  background-position: -150px bottom, 0px;
+  height: 2200px;
   background-repeat: no-repeat;
 }
 
-#menutitle p:first-child {
-  padding:50px 0px 25px 0px;
-  font-family: EBGar;
-  font-size: 80px;
-  text-align: center;
-}
-
-@media (max-width: 460px) {
-  #menutitle p:first-child  {
-    font-size: 30px;
+@media (max-width: 1700px) {
+  #menutitle {
+    background-position: -210px 1000px, 0px;
   }
 }
+
+@media (max-width: 1480px) {
+  #menutitle {
+    background-position: -250px 900px, 0px;
+  }
+}
+
+@media (max-width: 1200px) {
+  #menutitle {
+    background-image: url("pics/GRAPHICS/Leaf medium.png"), url("pics/DIVIDERS/Menu.png");
+    background-position: -250px 800px, 0px;
+  }
+}
+
+@media (max-width: 990px) {
+  #menutitle {
+    background-size: 700px, cover;
+    background-position: -250px 1000px, 0px;
+  }
+}
+
+@media (max-width: 600px) {  
+  #menutitle {
+    background-image: url("pics/DIVIDERS/Menu.png");
+    background-size: cover;
+  }  
+}
+/*end of leaf business*/
 
 .card .orderbutton {
   display: flex;
@@ -57,65 +79,95 @@
 }
 
 #menutitle p:nth-child(3)  {
-  padding: 50px 0px 25px 0px;
+  padding: 80px 0px 25px 0px;
   font-family: Nick;
   font-size: 80px;
   text-align: center;
+}
+
+.transparent {
+  padding-left: 20vw;
+  max-width: 80vw;
 }
 
 .transparent .cardboard {
   justify-content: space-around;
 }
 
-.transparent {
-  max-width: 90vw;
-  width: 100%;
-  overflow: hidden;
-}
-
 .transparent .cardboard .card{
-  margin: 20px 0 10px 0;
-  width: calc(100% / 2 - 10px);
-  background-color: peachpuff;
-  padding: 0;
+  margin: -25px 0 10px 0;
+  width: calc(100% / 2);
+  background-color: rgb(255,255,255, 0);
   color: black;
 }
 
 .transparent  .cardboard .card:hover{
   border-radius: 10px;
-  background-color: white;
 }
 
 .transparent  .card .details{
-  padding: 0;
+  text-align: center;
+}
+
+#left {
+  padding-left: 100px;
+}
+
+#right {
+  margin-left: -100px;
 }
 
 .transparent .card .content .img{
-  height: 650px;
-  width: 600px;
+  height: 450px;
+  width: 400px;
 }
 
-/*adjust!!!*/
-@media (max-width: 1280px) {
-  #menutitle p:first-child  {
+@media (max-width: 1480px) {
+  #menutitle p:nth-child(3) {
     font-size: 70px;
   }
   .transparent .card .content .img{
-    height: 270px;
-    width: 220px;
+    height: 350px;
+    width: 300px;
   }
 }
-/*
-.transparent .card .content{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-*/
 
-.transparent .card .details{
-  text-align: center;
+@media (max-width: 1200px) {
+  .transparent {
+    padding-left: 10vw;
+    max-width: 90vw;
+  }
+}
+
+@media (max-width: 990px) {
+  #menutitle p:nth-child(3) {
+    font-size: 50px;
+  }
+  .transparent .card .content .img{
+    height: 280px;
+    width: 260px;
+  }
+}
+
+@media (max-width: 720px) {  
+  .transparent .cardboard  .card{
+    width: 100%;
+  }
+  .transparent .cardcontainer{
+    padding-left: 15vw;
+    max-width: 85vw;
+  }
+  .transparent .card .content .img{
+    height: 230px;
+    width: 210px;
+  }
+  #left {
+    padding-left: 0px;
+  }
+  
+  #right {
+    margin-left: 0px;
+  }
 }
 
 .transparent .orderbutton a {  
