@@ -131,14 +131,6 @@
   background-color: #E1E1E1;
 }
 
-/*
-#bannerbg .banners {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-}
-*/
-
 #bannerbg .bannercontent {
   position: relative;
 }
@@ -365,6 +357,9 @@
 }
 
 @media screen and (max-width: 820px) {
+  .menus {
+    justify-content: start;
+  }
   .menus img {
     width: 25vw;
   }
@@ -385,21 +380,21 @@
   background-repeat: no-repeat;
 }
 
-#favebg #space {
+#favebg p:first-child {
   padding:50px 0px 25px 0px;
   font-family: EBGar;
   font-size: 80px;
   text-align: center;
 }
 
-.cardcontainer {
+.container {
   padding-left: 10vw;
   max-width: 90vw;
   width: 100%;
   overflow: hidden;
 }
 
-.cardcontainer .cardboard {
+.container .cardboard {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -466,7 +461,7 @@
 }
 
 @media (max-width: 1280px) {
-  #favebg #space  {
+  #favebg p:first-child  {
     font-size: 70px;
   }
   .card .content .img{
@@ -476,14 +471,14 @@
 }
 
 @media (max-width: 990px) {
-  #favebg #space  {
+  #favebg p:first-child  {
     font-size: 40px;
   }
   .cardboard  .card{
     margin: 20px 0 10px 0;
     width: calc(100% / 2 - 10px);
   }
-  .cardcontainer .cardboard {
+  .container .cardboard {
     justify-content: space-around;
   }
   .card .content .img{
@@ -529,7 +524,7 @@
 }
 
 @media (max-width: 460px) {
-  #favebg #space  {
+  #favebg p:first-child  {
     font-size: 30px;
   }
 }
@@ -573,7 +568,7 @@ highlight {
   padding: 5px calc((100vw / 4)/ 4) 5px calc((100vw / 4)/ 4);
   width: calc(100vw / 4);
 	font-size: 35px;
-  font-family: Aileron;
+  font-family: GlacialReg;
   color: white;
   background-color: rgb(24,25,26);
   border-radius: 100px;
@@ -704,10 +699,6 @@ highlight {
   }
 }
 
-@font-face {
-  font-family: "Aileron";
-  src: url("fonts/Aileron-Heavy.otf");
-}
 @font-face {
   font-family: "Aleo";
   src: url("fonts/Aleo-Light.ttf");
