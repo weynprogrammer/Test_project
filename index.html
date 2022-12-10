@@ -5,12 +5,16 @@
     <meta charset="UTF-8">
     <title>Phefayer Homepage</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="icon" type="image/x-icon" href="pics/favicon.png">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
 
     <body>
+
+    <button onclick="topFunction()" id="goTop">🡩</button>
+    <script src="js/top.js"></script>
+
     <div class="headrow">
                         
         <div class="logocol">
@@ -28,25 +32,6 @@
 
     <div id = "bannerbg">
         <div class="banners">
-                
-                <div class="banner">
-                    
-                    <div class="bannercontent">
-                        <a target="_blank" href="pics/1.png">
-                            <img src="pics/1.png" alt="Hawaiian BBQ Pizza">
-                        </a>
-
-                        <div class="topic" id = "topic1">A CLASSIC TASTE
-                                <div class="desc">Pizza is just pure comfort food, but it’s sure to please when done right. 
-                                This Hawaiian BBQ Chicken Pizza is loaded with cheese, barbecue sauce, pineapple and more.
-                                </div>
-                                <p class = "reader"><a target="_blank" href="#">READ MORE</a></p>
-                        </div>
-
-                    </div>
-
-                <!-- end of first banner -->
-                </div>
                 
                 <div class="banner">
                         <div class="bannercontent">
@@ -67,6 +52,25 @@
                 <!-- end of second banner -->
                 </div>
                 
+                <div class="banner">
+                    
+                    <div class="bannercontent">
+                        <a target="_blank" href="pics/1.png">
+                            <img src="pics/1.png" alt="Hawaiian BBQ Pizza">
+                        </a>
+
+                        <div class="topic" id = "topic1">A CLASSIC TASTE
+                                <div class="desc">Pizza is just pure comfort food, but it’s sure to please when done right. 
+                                This Hawaiian BBQ Chicken Pizza is loaded with cheese, barbecue sauce, pineapple and more.
+                                </div>
+                                <p class = "reader"><a target="_blank" href="#">READ MORE</a></p>
+                        </div>
+
+                    </div>
+
+                <!-- end of first banner -->
+                </div>
+
                 <div class="banner">
                     <div class="bannercontent">
 
@@ -107,15 +111,10 @@
         <!-- end of main banner -->
         </div>
 
-            <div onclick="moveSlides(1)" class="slider" id = "next">
-                <i class="material-icons md-60">chevron_right</i> 
-            </div>
+            <button onclick="moveSlides(-1)" id="next"><i class="glyphicon glyphicon-menu-right"></i></button>
+            <button onclick="moveSlides(1)" id="prev"><i class="glyphicon glyphicon-menu-left"></i></button>
             
-            <div onclick="moveSlides(-1)" class="slider" id = "prev">
-                <i class="material-icons md-60">chevron_left</i> 
-            </div>
-            
-            <script src="js/main.js"></script>
+            <script src="js/banner.js"></script>
 
         </div>
 

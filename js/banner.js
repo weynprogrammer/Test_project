@@ -10,6 +10,10 @@ function moveSlides(n) {
 function showSlides(n) {
     let i;
 
+    if (n==undefined) {
+        n = ++slideIndex
+    }
+    
     if (n > bannersImg.length) {
         slideIndex = 1
     }    
@@ -23,4 +27,6 @@ function showSlides(n) {
     }
 
     bannersImg[slideIndex-1].style.display = "block";  
+
+    setTimeout(showSlides, 5000);
 }
