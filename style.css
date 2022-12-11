@@ -440,12 +440,15 @@
   text-align: center;
 }
 
-/*of class .cardboard*/
+/*of class .cardcontainer*/
 #homepage, #menupage {
-  padding-left: 10vw;
   max-width: 90vw;
   width: 100%;
   overflow: hidden;
+}
+
+#menupage {
+  padding-left: 10vw;
 }
 
 .container .cardboard {
@@ -468,7 +471,7 @@
 }
 
 #menupage .card {
-  padding: 0px calc(2vw + 10px) calc(2vw) calc(2vw + 10px);
+  padding: calc(1vw) calc(2vw + 10px) calc(2vw) calc(2vw + 10px);
 }
 
 .cardboard .card:hover{
