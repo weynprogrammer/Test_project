@@ -562,10 +562,10 @@
   .cardboard  .card{
     width: 100%;
   }
-  .cardcontainer{
+  /*.cardcontainer{
     padding-left: 15vw;
     max-width: 85vw;
-  }
+  }*/
   .card .content .img{
     height: 150px; /*-50 from recent size*/
     width: 130px; /*-50 from recent size*/
