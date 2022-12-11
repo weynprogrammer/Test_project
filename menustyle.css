@@ -343,6 +343,14 @@ button.is_active span{
   }
 }
 
+.dessert #onlyone {
+  margin-top: -100px;
+}
+
+#onlyshort {
+  margin-top: -60px;
+}
+
 @font-face {
   font-family: "Aleo";
   src: url("fonts/Aleo-Light.ttf");
