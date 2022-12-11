@@ -1,4 +1,4 @@
-const bannersImg = document.querySelectorAll('.banners img');
+let bannersImg = document.querySelectorAll('.banners img');
 
 let slideIndex = 1;
 showSlides(slideIndex);

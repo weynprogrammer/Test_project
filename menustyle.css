@@ -40,42 +40,153 @@
 }
 /*end of leaf business*/
 
-.card .orderbutton {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 30px 0px 30px 0px;
-  transition: all 0.4s ease;
-}
-
-.orderbutton a {  
-  padding: 10px 40px;
-  font-family: GlacialReg;
-  font-size: 25px;
-  color: white;
+button {
+  padding-top: 5px;
+  border:none;
+  outline:none;
   border-radius: 100px;
-  background-color: #B29B68;
-  text-decoration: none;
+  font-size: 25px;
+  font-family: GlacialReg;
+  width: calc(100vw/6);
+  height: 50px;
+  cursor: pointer;
+  overflow: hidden;
   transition: all 0.4s ease;
 }
 
-.orderbutton a:hover {
-  background-color: rgb(178,155,104, 0.7);
+.getorder button { 
+  padding-top: 8px;
+  color: white;
+  background-color: #B29B68;
+}
+
+.getspecial button {
+  background-color: white;
+  border: solid 3px black;
+}
+
+:root {
+  --translateOrder: 3vw;
+  --translateSpecialLeft: 7vw;
+  --translateSpecialRight: 7vw;
+  --translateSpecialCenter: 6.5vw;
+  --translateCheck: calc((100vw/6)/2.5);
+}
+
+#OB1, #OB2, #OB3 {
+  transform: translateX(var(--translateOrder));
+}
+
+#OB4 {
+  transform:translateX(var(--translateSpecialLeft));
+}
+
+#OB5 {
+  transform: translateX(var(--translateSpecialRight));
+}
+
+#OB6 {
+  transform: translateX(var(--translateSpecialCenter));
+}
+
+.getorder button:hover {
+  background-color: rgb(178, 155, 104, 0.7);
+}
+
+.getspecial button:hover{
+  border: solid 3px #B29B68;
+}
+
+button span{
+  opacity: 1;
+  visibility: visible;
+}
+
+/*circle*/
+.success{
+  width: 13.5%;
+  height: 100%;
+  border-radius: 100%;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(var(--translateCheck), -32px);
+  transition: all 0.4s ease;
+}
+
+/*check* inside circle*/
+.success svg{
+  padding-top: 35px;
+  width: 20px;
+  height: 100px;
+  fill: white;
+  transform: translate(0px, -100px) rotate(480deg) scale(0);
+  transition: all 0.4s ease;
+}
+
+.getspecial svg {
+  fill:#B29B68;
 }
 
 
-@media (max-width: 1280px) {
-  .orderbutton a {  
-    padding: 10px 20px;
+button.is_active .success {
+  opacity: 1;
+  visibility: visible;
+}
+
+button.is_active .success svg{
+  transform: translateY(-50%) rotate(720deg) scale(1);
+}
+
+button.is_active span{
+  opacity: 0;
+  visibility: hidden;
+}
+
+@media (max-width: 1420px) {
+  :root {
+    --translateOrder: 1vw;
+  }
+}
+
+@media (max-width: 1050px) {
+  button {  
     font-size: 20px;
+  }
+  .getorder button { 
+    padding-top: 12px;
   }
 }
 
 @media (max-width: 990px) {
-  .orderbutton a {  
-    padding: 10px 10px;
+  button {  
     font-size: 16px;
+    width: calc(100vw/4);
+    height: 40px;
   }
+  :root {
+    --translateOrder: 4.5vw;
+    --translateCheck: calc((100vw/4)/2.5);
+  }
+  .getorder button { 
+    padding-top: 10px;
+  }
+  .success svg{
+    padding-top: 45px;
+  }
+}
+
+@media (max-width: 600px) {
+  .getorder button {  
+    padding-top: 4px;
+    width: calc(30.5vw);
+    height: 30px;
+  }
+  :root {
+    --translateOrder: 20.5vw;
+    --translateCheck: calc(20.5vw/1.7);
+  }
+
 }
 
 #menutitle p:nth-child(3)  {
@@ -109,14 +220,6 @@
   text-align: center;
 }
 
-#left {
-  padding-left: 100px;
-}
-
-#right {
-  margin-left: -100px;
-}
-
 .transparent .card .content .img{
   height: 450px;
   width: 400px;
@@ -137,6 +240,11 @@
     padding-left: 10vw;
     max-width: 90vw;
   }
+  :root {
+    --translateSpecialLeft: 12vw;
+    --translateSpecialRight: 12vw;
+    --translateSpecialCenter: 11.5vw;
+  }
 }
 
 @media (max-width: 990px) {
@@ -146,6 +254,15 @@
   .transparent .card .content .img{
     height: 280px;
     width: 260px;
+  }
+  .getspecial button {
+    width: calc(90vw/4);
+    --translateCheck: calc((90vw/4)/2.5);
+  }
+  :root {
+    --translateSpecialLeft: 9vw;
+    --translateSpecialRight: 9vw;
+    --translateSpecialCenter: 8.5vw;
   }
 }
 
@@ -161,76 +278,34 @@
     height: 230px;
     width: 210px;
   }
-  #left {
-    padding-left: 0px;
+  :root {
+    --translateSpecialLeft: calc(85vw/2.95);
+    --translateSpecialRight: calc(85vw/2.95);
+    --translateSpecialCenter: calc(85vw/2.95);
   }
-  
-  #right {
-    margin-left: 0px;
+   .getspecial button { 
+    padding-top: 8px;
   }
 }
 
-#orderbutton {
-  padding-top: 5px;
-  border:none;
-  outline:none;
-  font-size: 25px;
-  font-family: GlacialReg;
-  background-color: white;
-  border: solid 3px black;
-  border-radius: 100px;
-  width: 250px;
-  height: 50px;
-  cursor: pointer;
-  overflow: hidden;
-  transform: translate(160px, 20px);
-  transition: all 0.4s ease;
+@media (max-width: 600px) {
+  .getspecial button {  
+    padding-top: 2px;
+    height: 30px;
+    width: calc(85vw/2.5);
+    --translateCheck: calc((85vw/3.80)/1.55);
+  }
+  :root {
+    --translateSpecialLeft: calc(85vw/3.80);
+    --translateSpecialRight: calc(85vw/3.80);
+    --translateSpecialCenter: calc(85vw/3.80);
+  }
 }
 
-#orderbutton:hover{
-  color: white;
-  border: solid 3px #B29B68;
-  background-color: #B29B68;
-}
-
-#orderbutton span{
-  opacity: 1;
-  visibility: visible;
-}
-
-.success{
-  width: 16%;
-  height: 100%;
-  border-radius: 100%;
-  z-index: 99;
-  opacity: 0;
-  visibility: hidden;
-  background-color:#B29B68;
-  transform: translate(100px, -32px);
-  transition: all 0.4s ease;
-}
-
-.success svg{
-  padding-top: 35px;
-  width: 20px;
-  height: 100px;
-  fill: white;
-  transform: translate(100px, -32px) rotate(0deg) scale(0);
-  transition: all 0.4s ease;
-}
-
-#orderbutton.is_active .success {
-  opacity: 1;
-  visibility: visible;
-}
-
-#orderbutton.is_active .success svg{
-  transform: translateY(-50%) rotate(720deg) scale(1);
-}
-
-#orderbutton.is_active span{
-  opacity: 0;
-  visibility: hidden;
+@media (max-width: 400px){
+  .getspecial button {
+    --translateCheck: calc(85vw/7);
+  }
 }
 
 @font-face {

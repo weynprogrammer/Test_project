@@ -477,7 +477,7 @@
 }
 
 #menupage .card {
-  padding: calc(1vw) calc(2vw + 10px) calc(2vw) calc(2vw + 10px);
+  padding: calc(1vw) calc(2vw + 10px) calc(3.5vw) calc(2vw + 10px);
 }
 
 .cardboard .card:hover{
@@ -514,6 +514,7 @@
   font-family: DMSerif;
   font-size: 25px;
   letter-spacing: 1.5px;
+  padding-bottom: 30px;
 }
   
 .card .content .flavor{
