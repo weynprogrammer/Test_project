@@ -270,7 +270,7 @@ button.is_active span{
   .transparent .cardboard  .card{
     width: 100%;
   }
-  .transparent .cardcontainer{
+  .transparent /*.cardcontainer*/{
     padding-left: 15vw;
     max-width: 85vw;
   }
@@ -279,9 +279,9 @@ button.is_active span{
     width: 210px;
   }
   :root {
-    --translateSpecialLeft: calc(85vw/2.95);
-    --translateSpecialRight: calc(85vw/2.95);
-    --translateSpecialCenter: calc(85vw/2.95);
+    --translateSpecialLeft: 24vw;
+    --translateSpecialRight: 24vw;
+    --translateSpecialCenter: 24vw;
   }
    .getspecial button { 
     padding-top: 8px;
@@ -293,12 +293,12 @@ button.is_active span{
     padding-top: 2px;
     height: 30px;
     width: calc(85vw/2.5);
-    --translateCheck: calc((85vw/3.80)/1.55);
+    --translateCheck: calc((85vw/2.5)/2.5);
   }
   :root {
-    --translateSpecialLeft: calc(85vw/3.80);
-    --translateSpecialRight: calc(85vw/3.80);
-    --translateSpecialCenter: calc(85vw/3.80);
+    --translateSpecialLeft: 18vw;
+    --translateSpecialRight: 18vw;
+    --translateSpecialCenter: 18vw;
   }
 }
 
