@@ -62,6 +62,7 @@
 
 .navcol a:hover {
   font-family: GlacialBold;
+  text-decoration: none;
   color:#8f9675; /*light green*/
 }
 
@@ -213,6 +214,7 @@
 
 .reader a:hover {
   color: white;
+  text-decoration: none;
   background-color: rgb(24,25,26, 0.7);
 }
 
