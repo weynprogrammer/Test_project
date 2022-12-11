@@ -1,0 +1,157 @@
+#blogtitle {
+  max-width: 100vw;
+  width: 100%;
+  overflow: hidden;
+}
+
+:root {
+    --left: 5vw;
+}
+
+#blogtitle .cardboard  .card{
+    margin-top: 80px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgb(24,25,26, 0);
+    color: black;
+    transition: all 0.4s ease;
+}
+
+
+#blogtitle .cardboard .card:hover{
+    border-radius: 10px;
+    background-color: rgb(236, 229, 207, 0.5);
+    color: black;
+}
+
+#blogtitle .card .content{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+}
+
+#blogtitle .card .content .img{
+    margin-left: var(--left);
+    height: 600px;
+    width: 900px;
+    transition: all 0.4s ease;
+}
+  
+#blogtitle .card .content .img img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.card .content .category{
+    margin-left: var(--left);
+    font-family: Nick;
+    font-size: 80px;
+}
+
+.card .content .desc{
+    margin: 1vw var(--left);
+    font-family: GlacialReg;
+    font-size: 25px;
+    letter-spacing: 1.5px;
+    padding-bottom: 10px;
+}
+
+.finder a {
+    margin-left: var(--left);
+    padding: 10px calc((100vw / 10)/ 4) 10px calc((100vw / 10)/ 4);
+    width: calc(100vw / 10);
+    font-family: GlacialReg;
+    font-size: 30px;
+    color: black;
+    background-color: white;
+    border: solid 3px black;
+    border-radius: 100px;
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+
+.finder a:hover {
+    text-decoration: none;
+    border: solid 3px #BD9909;
+    background-color: rgb(24,25,26, 0);
+}
+
+@media (max-width: 1280px) {
+    #blogtitle .card .content .img{
+        height: 520px; /*-80 from original size*/
+        width: 820px;  /*-80 from original size*/
+    }
+    .finder {
+        margin-top: -30px;
+    }
+    .finder a {
+        font-size: 25px;
+    }
+    .card .content .category{
+        font-size: 75px;
+    }
+    .card .content .desc{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 990px) {
+    .card .content .img{
+        height: 450px; /*-70 from recent size*/
+        width: 780px; /*-40 from recent size*/
+    }
+    .finder {
+        margin-top: -10px;
+    }
+    .finder a {
+        font-size: 18px;
+    }
+    .card .content .category{
+        font-size: 55px;
+    }
+    .card .content .desc{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 840px) {
+    .finder a {
+        font-size: 16px;
+    }
+    .card .content .category{
+        font-size: 45px;
+    }
+    .card .content .desc{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 660px) {  
+    #blogtitle .cardboard  .card{
+        padding: 0px 50px;
+    }
+    #blogtitle .card .content{
+        margin: 50px 0px 50px 0px;
+        flex-direction: column;
+        text-align: center;
+    }   
+    #blogtitle .card .content .img{
+        margin-left: var(--left);
+        height: 200px;
+        width: 200px;
+        transition: all 0.4s ease;
+    }
+    :root {
+        --left: 0;
+    }
+}
+
+
+.dividerimg img {
+    margin-top: -30px;
+    width: 100vw;
+    transition: all 0.4s ease;
+}
+  

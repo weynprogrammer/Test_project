@@ -215,7 +215,7 @@
 .reader a:hover {
   color: white;
   text-decoration: none;
-  background-color: rgb(24,25,26, 0.7);
+  background-color: #BD9909;
 }
 
 #bannerbg #next, #bannerbg #prev {
@@ -441,7 +441,7 @@
   background-repeat: no-repeat;
 }
 
-#favebg p:first-child, #menutitle p:first-child {
+#favebg p:first-child, #menutitle p:first-child, #blogtitle {
   padding:50px 0px 25px 0px;
   font-family: EBGar;
   font-size: 80px;
@@ -534,7 +534,7 @@
 }
 
 @media (max-width: 1280px) {
-  #favebg p:first-child, #menutitle p:first-child {
+  #favebg p:first-child, #menutitle p:first-child, #blogtitle {
     font-size: 70px;
   }
   .card .content .img{
@@ -544,7 +544,7 @@
 }
 
 @media (max-width: 990px) {
-  #favebg p:first-child, #menutitle p:first-child {
+  #favebg p:first-child, #menutitle p:first-child, #blogtitle {
     font-size: 50px;
   }
   .cardboard  .card{
@@ -575,7 +575,7 @@
 }
 
 @media (max-width: 600px) {  
-  #favebg p:first-child, #menutitle p:first-child {
+  #favebg p:first-child, #menutitle p:first-child, #blogtitle {
     font-size: 40px;
   }
   .cardboard  .card{
@@ -603,7 +603,7 @@
 }
 
 @media (max-width: 460px) {
-  #favebg p:first-child, #menutitle p:first-child   {
+  #favebg p:first-child, #menutitle p:first-child, #blogtitle   {
     font-size: 30px;
   }
 }
@@ -658,7 +658,7 @@ highlight {
 .col2 a:hover{
   color: white;
   text-decoration: none;
-  background-color: rgb(24,25,26, 0.7);
+  background-color: #BD9909;
 }
 
 @media screen and (max-width: 1555px){

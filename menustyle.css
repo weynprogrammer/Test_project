@@ -351,35 +351,3 @@ button.is_active span{
   margin-top: -60px;
 }
 
-@font-face {
-  font-family: "Aleo";
-  src: url("fonts/Aleo-Light.ttf");
-}
-@font-face {
-  font-family: "AmFour";
-  src: url("fonts/Amsterdam Four_ttf 400.ttf");
-}
-@font-face {
-  font-family: "DMSerif";
-  src: url("fonts/DMSerifDisplay-Regular.ttf");
-}
-@font-face {
-  font-family: "EBGar";
-  src: url("fonts/EBGaramond-VariableFont_wght.ttf");
-}
-@font-face {
-  font-family: "GlacialReg";
-  src: url("fonts/GlacialIndifference-Regular.otf");
-}
-@font-face {
-  font-family: "GlacialBold";
-  src: url("fonts/GlacialIndifference-Bold.otf");
-}
-@font-face {
-  font-family: "LibBask";
-  src: url("fonts/LibreBaskerville-Regular.ttf");
-}
-@font-face {
-  font-family: "Nick";
-  src: url("fonts/Nickainley-Normal.otf");
-}
