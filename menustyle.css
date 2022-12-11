@@ -73,6 +73,10 @@ button {
   --translateCheck: calc((100vw/6)/2.5);
 }
 
+#menupage_two {
+  --translateOrder: 9vw;
+}
+
 #OB1, #OB2, #OB3 {
   transform: translateX(var(--translateOrder));
 }
@@ -147,6 +151,9 @@ button.is_active span{
   :root {
     --translateOrder: 1vw;
   }
+  #menupage_two {
+    --translateOrder: 8.5vw;
+  }
 }
 
 @media (max-width: 1050px) {
@@ -168,6 +175,9 @@ button.is_active span{
     --translateOrder: 4.5vw;
     --translateCheck: calc((100vw/4)/2.5);
   }
+  #menupage_two {
+    --translateOrder: calc(90vw/4);
+  }
   .getorder button { 
     padding-top: 10px;
   }
@@ -185,6 +195,9 @@ button.is_active span{
   :root {
     --translateOrder: 20.5vw;
     --translateCheck: calc(20.5vw/1.7);
+  }
+    #menupage_two {
+    --translateOrder: calc(90vw/4.5);
   }
 
 }
@@ -218,6 +231,7 @@ button.is_active span{
 
 .transparent  .card .details{
   text-align: center;
+  padding-bottom: 30px;
 }
 
 .transparent .card .content .img{
@@ -225,13 +239,24 @@ button.is_active span{
   width: 400px;
 }
 
+#onlyone {
+  margin-top: -20px;
+  margin-left: -50px;
+  height: 550px;
+  width: 500px;
+}
+
 @media (max-width: 1480px) {
   #menutitle p:nth-child(3) {
     font-size: 70px;
   }
-  .transparent .card .content .img{
+  .transparent .card .content .img {
     height: 350px;
     width: 300px;
+  }
+  #onlyone {
+    height: 450px;
+    width: 400px;
   }
 }
 
@@ -255,6 +280,11 @@ button.is_active span{
     height: 280px;
     width: 260px;
   }
+  #onlyone {
+    margin-top: -40px;
+    height: 380px;
+    width: 360px;
+  }
   .getspecial button {
     width: calc(90vw/4);
     --translateCheck: calc((90vw/4)/2.5);
@@ -277,6 +307,11 @@ button.is_active span{
   .transparent .card .content .img{
     height: 230px;
     width: 210px;
+  }
+  #onlyone {
+    margin-top: -40px;
+    height: 330px;
+    width: 310px;
   }
   :root {
     --translateSpecialLeft: 24vw;

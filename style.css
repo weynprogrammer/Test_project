@@ -447,13 +447,13 @@
 }
 
 /*of class .cardcontainer*/
-#homepage, #menupage {
+#homepage, #menupage, #menupage_two {
   max-width: 90vw;
   width: 100%;
   overflow: hidden;
 }
 
-#menupage {
+#menupage, #menupage_two {
   padding-left: 10vw;
 }
 
@@ -476,8 +476,12 @@
   padding: calc(2vw + 10px);
 }
 
-#menupage .card {
+#menupage .card, #menupage_two .card {
   padding: calc(1vw) calc(2vw + 10px) calc(3.5vw) calc(2vw + 10px);
+}
+
+#menupage_two .card {
+  width: calc(100% / 2 - 10px);
 }
 
 .cardboard .card:hover{
@@ -514,6 +518,9 @@
   font-family: DMSerif;
   font-size: 25px;
   letter-spacing: 1.5px;
+}
+
+#menupage .card .content, #menupage_two .card .content {
   padding-bottom: 30px;
 }
   
@@ -541,6 +548,9 @@
   .cardboard  .card{
     margin: 20px 0 10px 0;
     width: calc(100% / 2 - 10px);
+  }
+  #menupage_two .card{
+    width: 100%;
   }
   .container .cardboard {
     justify-content: space-around;
