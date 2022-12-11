@@ -170,17 +170,67 @@
   }
 }
 
-.transparent .orderbutton a {  
-  color: black;
+#orderbutton {
+  padding-top: 5px;
+  border:none;
+  outline:none;
+  font-size: 25px;
+  font-family: GlacialReg;
   background-color: white;
   border: solid 3px black;
   border-radius: 100px;
+  width: 250px;
+  height: 50px;
+  cursor: pointer;
+  overflow: hidden;
+  transform: translate(160px, 20px);
+  transition: all 0.4s ease;
 }
 
-.transparent .orderbutton a:hover {
+#orderbutton:hover{
   color: white;
   border: solid 3px #B29B68;
   background-color: #B29B68;
+}
+
+#orderbutton span{
+  opacity: 1;
+  visibility: visible;
+}
+
+.success{
+  width: 16%;
+  height: 100%;
+  border-radius: 100%;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  background-color:#B29B68;
+  transform: translate(100px, -32px);
+  transition: all 0.4s ease;
+}
+
+.success svg{
+  padding-top: 35px;
+  width: 20px;
+  height: 100px;
+  fill: white;
+  transform: translate(100px, -32px) rotate(0deg) scale(0);
+  transition: all 0.4s ease;
+}
+
+#orderbutton.is_active .success {
+  opacity: 1;
+  visibility: visible;
+}
+
+#orderbutton.is_active .success svg{
+  transform: translateY(-50%) rotate(720deg) scale(1);
+}
+
+#orderbutton.is_active span{
+  opacity: 0;
+  visibility: hidden;
 }
 
 @font-face {
