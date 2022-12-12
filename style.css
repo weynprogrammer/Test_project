@@ -146,6 +146,22 @@
   }
 }
 
+@media screen and (max-width: 330px) {
+  .navcol #secondnav {
+    display: none;
+  }
+  .logocol, .navcol {
+    justify-content: space-around;
+  }
+  #blogpreview .col1 {
+    display: none;
+  }
+  #blogpreview .col2 {
+    width: 100vw;
+  }
+}
+
+
 #bannerbg {
   font-family: GlacialReg;
   width: 100vw;
@@ -398,6 +414,15 @@
   }
   .material-icons.md-60 { 
     font-size: 40px; 
+  }
+}
+
+@media screen and (max-width: 350px) {
+  #bannerbg .bannercontent .topic,  #bannerbg .bannercontent #topic4  {
+    font-size: 18px;
+  }
+  .reader {
+    padding-top: 10px;
   }
 }
 

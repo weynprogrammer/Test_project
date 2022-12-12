@@ -301,6 +301,17 @@ button.is_active span{
   }
 }
 
+@media (max-width: 365px){
+  .getorder button, .getspecial button {
+    width: 50vw;
+    --translateOrder: 10vw;
+    --translateSpecialLeft: 10vw;
+    --translateSpecialRight: 10vw;
+    --translateSpecialCenter: 10vw;
+    --translateCheck: calc(50vw/2.5);
+  }
+}
+
 .dessert #onlyone {
   margin-top: -100px;
 }
