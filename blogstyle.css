@@ -9,7 +9,7 @@
 }
 
 #blogtitle .cardboard  .card{
-    margin-top: 80px;
+    margin-top: 50px;
     width: 100%;
     border-radius: 10px;
     background-color: rgb(24,25,26, 0);
@@ -78,6 +78,11 @@
     background-color: rgb(24,25,26, 0);
 }
 
+@media (max-width: 1400px) {
+    #blogtitle .cardboard  .card{
+        margin-top: -50px;
+    }
+}
 @media (max-width: 1280px) {
     #blogtitle .card .content .img{
         height: 520px; /*-80 from original size*/
@@ -129,6 +134,12 @@
 }
 
 @media (max-width: 660px) {  
+    .card .content .desc {
+        letter-spacing: .5px;
+    }
+    #blogtitle .cardboard  .card{
+        margin-top: -10px;
+    }
     #blogtitle .cardboard  .card{
         padding: 0px 50px;
     }
@@ -145,6 +156,9 @@
     }
     :root {
         --left: 0;
+    }
+    .finder {
+        margin-top: 0px;
     }
 }
 
