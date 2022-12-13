@@ -63,7 +63,7 @@
 .navcol a:hover {
   font-family: GlacialBold;
   text-decoration: none;
-  color:#8f9675; /*light green*/
+  color:#8f9675; 
 }
 
 @media screen and (max-width: 1080px) {
@@ -462,7 +462,7 @@
 #favebg {
   background-image: url("pics/DIVIDERS/Div 2.png");
   background-size: cover;
-  height: 810px;
+  height: auto;
   background-repeat: no-repeat;
 }
 
@@ -606,10 +606,6 @@
   .cardboard  .card{
     width: 100%;
   }
-  /*.cardcontainer{
-    padding-left: 15vw;
-    max-width: 85vw;
-  }*/
   .card .content .img{
     height: 150px; /*-50 from recent size*/
     width: 130px; /*-50 from recent size*/
@@ -828,10 +824,6 @@ highlight {
 @font-face {
   font-family: "GlacialBold";
   src: url("fonts/GlacialIndifference-Bold.otf");
-}
-@font-face {
-  font-family: "LibBask";
-  src: url("fonts/LibreBaskerville-Regular.ttf");
 }
 @font-face {
   font-family: "Nick";
