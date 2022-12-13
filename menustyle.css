@@ -90,7 +90,6 @@ button span{
   fill:#B29B68;
 }
 
-
 button.is_active .success {
   opacity: 1;
   visibility: visible;
@@ -258,7 +257,7 @@ button.is_active span{
   .transparent .cardboard  .card{
     width: 100%;
   }
-  .transparent /*.cardcontainer*/{
+  .transparent {
     padding-left: 15vw;
     max-width: 85vw;
   }
